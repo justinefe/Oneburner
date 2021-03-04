@@ -1,0 +1,30 @@
+.tools {
+  display: flex;
+  align-items: center;
+  padding: 30px 80px;
+  margin: 50px auto;
+  flex-direction: column;
+}
+.tools_images {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+.tools_headings {
+  width: 25%;
+  margin-bottom: 80px;
+  text-align: center;
+}
+.tools_headings > span {
+  font-size: larger;
+  font-weight: 500;
+  color: 333333;
+}
+.tools_image_wrap {
+  height: 50px;
+  margin: 0 50px 70px 0;
+}
+.tools_image_wrap img {
+  height: 100%;
+  object-fit: contain;
+}

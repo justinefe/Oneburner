@@ -1,0 +1,21 @@
+.partner {
+  display: flex;
+  text-align: center;
+  margin: 60px;
+  flex-direction: column;
+}
+.partner > span {
+  display: inline-block;
+  color: #01001d;
+  font-size: medium;
+  font-weight: 495;
+  margin-bottom: 25px;
+}
+.partner_image_wrap {
+  width: 80vw;
+  margin: 2px auto;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  flex: 1;
+}

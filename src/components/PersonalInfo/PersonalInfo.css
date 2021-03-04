@@ -1,0 +1,25 @@
+.PersonalInfo_imagewrap {
+  height: 130px;
+  margin-right: 25px;
+}
+
+.PersonalInfo_imagewrap > img {
+  height: 100%;
+  object-fit: contain;
+}
+
+.PersonalInfo_content_details > span:nth-child(1) {
+  display: inline-block;
+  margin-bottom: 5px;
+  font-size: medium;
+  font-weight: 500;
+}
+.PersonalInfo_content {
+  display: flex;
+  align-items: center;
+  margin: auto 30px;
+}
+.PersonalInfo_content_details {
+  display: flex;
+  flex-direction: column;
+}

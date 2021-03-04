@@ -1,0 +1,32 @@
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px 60px;
+}
+.nav_left {
+  display: flex;
+  align-items: center;
+}
+.nav_right {
+  align-items: center;
+  display: flex;
+}
+.nav_left_logo_wrap {
+  height: 32px;
+}
+.nav_left_logo_wrap > img {
+  height: 100%;
+  object-fit: contain;
+}
+
+.nav_left_button > button,
+.nav_right_button > button {
+  background-color: transparent;
+  outline: none;
+  border: none;
+  font-size: small;
+  font-weight: 700;
+  color: rgba(51, 51, 51, 0.8);
+  margin-left: 30px;
+}

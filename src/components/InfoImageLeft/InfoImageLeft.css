@@ -1,0 +1,18 @@
+.InfoImageLeft {
+  display: flex;
+  padding: 0 80px;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.InfoImageLeft_dashboard {
+  height: 300px;
+  border: 1px solid rgba(69, 69, 69, 0.13);
+}
+.InfoImageLeft_dashboard img {
+  height: 100%;
+  object-fit: contain;
+}
+.InfoImageLeft_right {
+  width: 50%;
+}

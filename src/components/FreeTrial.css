@@ -1,0 +1,24 @@
+.freetrial {
+  width: 100%s;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px;
+}
+.freetrial_content {
+  margin: 25px auto;
+  display: flex;
+  align-items: center;
+  font-size: small;
+  font-weight: 500;
+  color: white;
+}
+.freetrial_header {
+  font-size: 22px;
+  width: 40vw;
+  text-align: center;
+  font-weight: 700;
+}
+.freetrial_button_wrap {
+  margin: 30px auto;
+}

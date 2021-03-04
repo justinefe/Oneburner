@@ -1,0 +1,8 @@
+.CompanyLogo {
+  height: 50px;
+  margin: 0 50px 70px 0;
+}
+.CompanyLogo img {
+  height: 100%;
+  object-fit: contain;
+}

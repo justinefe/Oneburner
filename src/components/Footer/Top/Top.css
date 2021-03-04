@@ -1,0 +1,28 @@
+.top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.top_img {
+  height: 30px;
+}
+.top_select {
+  height: 35px;
+  width: 180px;
+  border: 2px solid #462686;
+  border-radius: 10px;
+  display: flex;
+  padding: 0 20px;
+  justify-content: space-between;
+  align-items: center;
+}
+.top_select_language {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: medium;
+  color: #462686;
+}
+.top_select_language > span {
+  margin-left: 5px;
+}
