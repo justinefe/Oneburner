@@ -1,7 +1,7 @@
 import React from "react";
 import markedGood from "../../assets/select.png";
 import medah from "../../assets/medah.png";
-import "./Help.css";
+import "./Help.scss";
 import PersonalInfo from "../../components/PersonalInfo/PersonalInfo";
 
 const Help = () => {

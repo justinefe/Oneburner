@@ -1,0 +1,105 @@
+@import "../../media";
+@import "../../function.scss";
+/*
+@include for-size(desktop-up) {
+}
+
+@include for-size(phone-only) {
+}
+@include for-size(tablet-portrait-up) {
+}
+*/
+.navWrap {
+  position: -webkit-sticky;
+  position: sticky;
+  background-color: white;
+  top: 0;
+}
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px 20px;
+}
+.nav_left {
+  display: flex;
+  align-items: center;
+  @include for-size(tablet-portrait-up) {
+    width: 50%;
+    justify-content: flex-start;
+  }
+  .nav_left_button {
+    @include for-size(phone-only) {
+      display: none;
+    }
+  }
+}
+.nav_right {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  .nav_right_button {
+    @include for-size(phone-only) {
+      display: none;
+    }
+  }
+
+  .btnxm {
+    @include for-size(tablet-portrait-up) {
+      margin: 0;
+      width: 80px;
+      padding: 0 10px;
+      font-size: small;
+    }
+    @include for-size(phone-only) {
+      display: none;
+    }
+  }
+}
+.nav_left_logo_wrap {
+  height: 32px;
+  @include for-size(tablet-portrait-up) {
+    // height: 30px;
+  }
+  @include for-size(phone-only) {
+    height: 28px;
+  }
+}
+.nav_left_logo_wrap > img {
+  height: 100%;
+  object-fit: contain;
+}
+
+.nav_left_button > h3,
+.nav_right_button > h3 {
+  background-color: transparent;
+  font-size: medium;
+  margin: 0 10px;
+  // color: #333333;
+  color: rgba(51, 51, 51, 0.8);
+  margin-left: 30px;
+  @include for-size(tablet-portrait-up) {
+    margin-left: 0px;
+  }
+}
+.show {
+  display: flex !important;
+}
+.drop {
+  @include for-size(tablet-portrait-up) {
+    // height: 30px;
+    // margin: ;
+    padding: 0 10px;
+  }
+}
+.nav .nav_right svg {
+  @include for-size(tablet-portrait-up) {
+    display: none;
+  }
+  @include for-size(desktop-up) {
+    display: none;
+  }
+}
+a {
+  text-decoration: none;
+}

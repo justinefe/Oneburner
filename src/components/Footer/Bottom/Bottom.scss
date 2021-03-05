@@ -1,0 +1,37 @@
+@import "../../../media.scss";
+@import "../../../function.scss";
+/*
+@include for-size(desktop-up) {
+}
+
+@include for-size(phone-only) {
+}
+@include for-size(tablet-portrait-up) {
+}
+*/
+.bottom {
+  border-top: 1px solid rgba(69, 69, 69, 0.13);
+}
+.bottom_wrap {
+  margin-top: 8px;
+  height: 60px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  font-size: small;
+  font-weight: 500;
+  color: rgba(1, 0, 29, 0.6);
+  @include for-size(tablet-portrait-up) {
+    justify-content: center;
+  }
+  @include for-size(phone-only) {
+    justify-content: center;
+  }
+}
+
+.btcenter {
+  justify-content: center !important;
+}
+.bottom_rit {
+  padding-left: 9px;
+}

@@ -1,0 +1,56 @@
+@import "../media";
+@import "../function.scss";
+/*
+@include for-size(desktop-up) {
+}
+
+@include for-size(phone-only) {
+}
+@include for-size(tablet-portrait-up) {
+}
+*/
+.freetrial {
+  width: 100%s;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px;
+  @include for-size(phone-only) {
+    padding: 20px;
+  }
+}
+.freetrial_content {
+  margin: 25px auto;
+  display: flex;
+  align-items: center;
+  font-size: small;
+  font-weight: 500;
+  color: white;
+  @include for-size(phone-only) {
+    justify-content: space-evenly;
+  }
+  span {
+    @include for-size(phone-only) {
+      font-size: 11px;
+    }
+  }
+  div {
+    @include for-size(phone-only) {
+      height: 26px !important;
+      margin: 0 12px !important;
+    }
+  }
+}
+.freetrial_header {
+  font-size: 22px;
+  width: 40vw;
+  text-align: center;
+  font-weight: 700;
+  @include for-size(phone-only) {
+    font-size: small;
+    width: 60vw;
+  }
+}
+.freetrial_button_wrap {
+  margin: 30px auto;
+}

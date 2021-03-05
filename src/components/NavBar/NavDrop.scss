@@ -1,0 +1,113 @@
+@import "../../media";
+@import "../../function.scss";
+/*
+@include for-size(desktop-up) {
+}
+
+@include for-size(phone-only) {
+}
+@include for-size(tablet-portrait-up) {
+}
+*/
+.navdrop {
+  display: none;
+  justify-content: space-between;
+  padding: 20px 60px 60px 60px;
+  position: absolute;
+  background-color: white;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.05);
+  @include for-size(tablet-portrait-up) {
+    padding: 20px;
+  }
+}
+.NavDropOption {
+  display: flex;
+}
+.NavDropOption_image {
+  height: 18px;
+  width: 18px;
+  padding-top: 6px;
+}
+.NavDropOption_image > img {
+  height: 100%;
+  object-fit: contain;
+}
+.NavDropOption_details {
+  text-align: left;
+  margin-left: 15px;
+}
+.NavDropOption_details > h3 {
+  margin-top: 0;
+  font-size: medium;
+  margin-bottom: 10px;
+  color: rgba(51, 51, 51, 0.8);
+}
+.NavDropOption_details > p {
+  margin-top: 0;
+  color: rgba(1, 0, 29, 0.6);
+  font-size: medium;
+  @include for-size(tablet-portrait-up) {
+    font-size: small;
+  }
+}
+.drop {
+  display: flex;
+  align-items: center;
+}
+
+/* Menu things*/
+.menudrop {
+  display: none;
+  max-width: 63vw;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.05);
+  padding: 4px 20px 4px 2px;
+  right: 0;
+  top: 60;
+  position: absolute;
+  background-color: white;
+  justify-content: flex-end;
+  .navdrop {
+    padding: 0px;
+    width: 50%;
+    box-shadow: none;
+    position: static;
+  }
+}
+.menudrop .navdrop .NavDropOption .NavDropOption_details h3 {
+  margin-top: 3px;
+  font-size: small;
+  margin-bottom: 3px;
+}
+.menudrop .navdrop .NavDropOption .NavDropOption_details p {
+  font-size: small;
+}
+.menudrop .navdrop .NavDropOption .NavDropOption_details {
+  margin-left: 8px;
+}
+.menudrop_right {
+  padding: 0 8px 8px 18px;
+  display: flex;
+  flex-direction: column;
+  .menudrop_right_button > img {
+    height: 9px;
+    transform: translate(-16px, 6px);
+    position: absolute;
+    padding-bottom: 10px;
+    object-fit: contain;
+  }
+  .menudrop_right_button {
+    position: relative;
+    h3 {
+      margin-top: 0;
+      font-weight: 500;
+      font-size: small;
+      margin-bottom: 12px !important;
+      color: rgba(51, 51, 51, 0.8);
+    }
+  }
+}
+
+.showMenu {
+  display: flex;
+  flex-wrap: wrap;
+}

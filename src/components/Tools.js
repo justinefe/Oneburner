@@ -22,7 +22,7 @@ import wordpress from "../assets/integrate/wordpress-blue 1.png";
 import youtube from "../assets/integrate/youtube-3.png";
 import zeplin from "../assets/integrate/zeplin.png";
 
-import "./Tools.css";
+import "./Tools.scss";
 import CompanyLogo from "./CompanyLogo/CompanyLogo";
 
 const partnerLogo = [

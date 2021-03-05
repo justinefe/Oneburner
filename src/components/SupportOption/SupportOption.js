@@ -1,5 +1,5 @@
 import React from "react";
-import "./SupportOption.css";
+import "./SupportOption.scss";
 
 const SupportOption = ({ img, title }) => {
   return (

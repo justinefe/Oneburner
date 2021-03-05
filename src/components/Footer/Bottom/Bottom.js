@@ -1,7 +1,7 @@
 import React from "react";
 import { getYear } from "../../../utills/index";
 import Space from "../../Space";
-import "./Bottom.css";
+import "./Bottom.scss";
 
 const Bottom = () => {
   return (

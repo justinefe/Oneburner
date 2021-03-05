@@ -2,7 +2,7 @@ import React from "react";
 import { NavLink } from "react-router-dom";
 import activity from "../../assets/activity.png";
 import InfoImageRight from "../../components/InfoImageRight/InfoImageRight";
-import "./Activities.css";
+import "./Activities.scss";
 const Activities = () => {
   return (
     <div className="activity">

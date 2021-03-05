@@ -8,7 +8,7 @@ import std from "../assets/partner/stdbank.png";
 import mtn from "../assets/partner/MTN.png";
 import skolee from "../assets/partner/skolee.png";
 
-import "./Partner.css";
+import "./Partner.scss";
 
 const partnerLogo = [dangote, gt, paystack, egyptair, std, mtn, skolee];
 

@@ -1,41 +1,40 @@
-import React from "react";
-import Button from "../RoundedBtn/Btnxm";
-import LogoEdited from "../../assets/LogoEdited.jpg";
-import dropdown from "../../assets/dropdown.jpg";
-import "./Nav.css";
+import React, { useRef, useEffect } from "react";
+import NavBar from "./NavBar";
+import NavDrop from "./NavDrop";
+import "./Nav.scss";
+import "./NavDrop.scss";
+import MenuDrop from "./MenuDrop";
 
-const NavBar = () => {
+const MainNav = () => {
+  const dropRef = useRef();
+  const navRef = useRef();
+  const menuRef = useRef();
+  useEffect(() => {
+    const scroll = () => {
+      if (window.scrollY > 70 && navRef.current) {
+        navRef.current.style.boxShadow = "0 2px 5px 0 rgba(0, 0, 0, 0.05)";
+      } else {
+        navRef.current.style.boxShadow = "none";
+      }
+    };
+    window.addEventListener("scroll", scroll);
+    return () => {
+      window.removeEventListener("scroll", scroll);
+    };
+  }, [window.scrollY]);
+  const handleClick = (e) => {
+    dropRef.current.classList.toggle("show");
+  };
+  const handleMenuClick = (e) => {
+    menuRef.current.classList.toggle("showMenu");
+  };
   return (
-    <div className="nav">
-      <div className="nav_left">
-        <div className="nav_left_logo_wrap">
-          <img src={LogoEdited} alt="" />
-        </div>
-        <div className="nav_left_button drop">
-          <button>Product</button>
-          <img src={dropdown} alt="" />
-        </div>
-        <div className="nav_left_button">
-          <button>Pricing</button>
-        </div>
-        <div className="nav_left_button">
-          <button>Enterprise</button>
-        </div>
-        <div className="nav_left_button">
-          <button>Support</button>
-        </div>
-      </div>
-      <div className="nav_right">
-        <div className="nav_right_button">
-          <button>Contact Sales</button>
-        </div>
-        <div className="nav_right_button">
-          <button>Login</button>
-        </div>
-        <Button />
-      </div>
+    <div ref={navRef} className="navWrap" style={{ zIndex: "44" }}>
+      <NavBar handleMenuClick={handleMenuClick} handleClick={handleClick} />
+      <NavDrop ref={dropRef} />
+      <MenuDrop ref={menuRef} />
     </div>
   );
 };
 
-export default NavBar;
+export default MainNav;

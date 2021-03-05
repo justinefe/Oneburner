@@ -1,6 +1,6 @@
 import React from "react";
 
-import "./PersonalInfo.css";
+import "./PersonalInfo.scss";
 
 const PersonalInfo = ({ name, desc, image, col }) => {
   return (

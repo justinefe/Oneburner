@@ -1,10 +1,10 @@
 import React from "react";
 import dropRight from "../../assets/dropRight.png";
-import "./Button.css";
+import "./Button.scss";
 const Button = ({ title }) => {
   return (
     <div className="button">
-      <button>{title ? title : "Start free trial"}</button>
+      <div>{title ? title : "Start free trial"}</div>
       <img src={dropRight} alt="" />
     </div>
   );

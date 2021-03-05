@@ -2,7 +2,7 @@ import React from "react";
 import PersonalInfo from "../../components/PersonalInfo/PersonalInfo";
 import profile from "../../assets/profile.png";
 
-import "./Testimonial.css";
+import "./Testimonial.scss";
 
 const Testimonial = () => {
   return (

@@ -2,7 +2,7 @@ import React from "react";
 import financialReport from "../../assets/financial-report.png";
 import resReport from "../../assets/resreport.png";
 import Button from "../../components/RoundedBtn/Button";
-import "./BannerTwo.css";
+import "./BannerTwo.scss";
 const BannerTwo = () => {
   return (
     <div className="bannartwo">

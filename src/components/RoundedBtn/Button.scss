@@ -1,3 +1,14 @@
+@import "../../media";
+@import "../../function.scss";
+/*
+@include for-size(desktop-up) {
+}
+
+@include for-size(phone-only) {
+}
+@include for-size(tablet-portrait-up) {
+}
+*/
 .button {
   width: 150px;
   height: 40px;
@@ -8,13 +19,33 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  @include for-size(phone-only) {
+    height: 25px;
+    width: 70px;
+    padding: 0 10px;
+  }
+  @include for-size(tablet-portrait-up) {
+    width: 120px;
+  }
 }
-.button > button,
-.btnxm > button {
+.button > div,
+.btnxm > div {
   color: white;
   font-size: small;
+  font-weight: 500;
   background-color: transparent;
   border: none;
+
+  @include for-size(phone-only) {
+    font-size: xx-small;
+    // width: 1000px;
+  }
+}
+@include for-size(phone-only) {
+  .button > img {
+    height: 8px;
+    object-fit: contain;
+  }
 }
 
 .btnxm {

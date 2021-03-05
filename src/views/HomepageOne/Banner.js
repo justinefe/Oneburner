@@ -1,7 +1,7 @@
 import React from "react";
 import landingImage from "../../assets/lanidng-image.png";
 import RoundedBtn from "../../components/RoundedBtn/Button";
-import "./Banner.css";
+import "./Banner.scss";
 const Banner = () => {
   return (
     <div className="banner">

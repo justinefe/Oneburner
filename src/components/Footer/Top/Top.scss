@@ -1,0 +1,76 @@
+@import "../../../media.scss";
+@import "../../../function.scss";
+/*
+@include for-size(desktop-up) {
+}
+
+@include for-size(phone-only) {
+}
+@include for-size(tablet-portrait-up) {
+}
+*/
+.Footer {
+  padding: 60px 60px 0 60px;
+  @include for-size(phone-only) {
+    padding: 20px 20px 0 20px;
+  }
+  @include for-size(tablet-portrait-up) {
+    padding: 20px 20px 0 20px;
+  }
+}
+.top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.top_img > img {
+  height: 100%;
+  object-fit: contain;
+}
+.top_img {
+  height: 55px;
+  @include for-size(phone-only) {
+    height: 30px;
+  }
+  @include for-size(tablet-portrait-up) {
+    height: 40px;
+  }
+}
+.top_select {
+  height: 35px;
+  width: 180px;
+  border: 2px solid #462686;
+  border-radius: 10px;
+  display: flex;
+  padding: 0 20px;
+  justify-content: space-between;
+  align-items: center;
+  @include for-size(phone-only) {
+    height: 25px;
+    width: 80px;
+  }
+}
+.top_select_language {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: medium;
+  color: #462686;
+  @include for-size(phone-only) {
+    font-size: small;
+  }
+}
+.top_select_language > img {
+  @include for-size(phone-only) {
+    height: 15px;
+  }
+}
+.top_select_language > span {
+  margin-left: 5px;
+}
+.top_select > img {
+  @include for-size(phone-only) {
+    height: 7px;
+    object-fit: contain;
+  }
+}

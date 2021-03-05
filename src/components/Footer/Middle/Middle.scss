@@ -1,43 +1,85 @@
+@import "../../../media.scss";
+@import "../../../function.scss";
+/*
+@include for-size(desktop-up) {
+}
+
+@include for-size(phone-only) {
+}
+@include for-size(tablet-portrait-up) {
+}
+*/
 .middle {
   display: flex;
   justify-content: space-between;
   margin: 50px 0;
   color: rgba(1, 0, 29, 0.6);
+  @include for-size(phone-only) {
+    flex-wrap: wrap;
+  }
 }
 .middle_left {
   display: flex;
+  font-weight: 500;
   flex-direction: column;
+  @include for-size(phone-only) {
+    text-align: center;
+    width: 100%;
+  }
 }
 .middle_left_address {
   font-size: medium;
-  font-weight: bold;
+  // font-weight: bold;
+
+  @include for-size(phone-only) {
+    font-size: small;
+    margin-bottom: 3px;
+  }
 }
 .middle_left_terms {
   display: flex;
   align-items: center;
   margin-top: 8px;
   font-size: smaller;
+  @include for-size(phone-only) {
+    justify-content: center;
+    font-size: x-small;
+  }
 }
 .middle_left_contact {
   margin-top: 30px;
 }
 .middle_left_contact > span {
   font-size: smaller;
+  @include for-size(phone-only) {
+    font-size: x-small;
+  }
 }
 .middle_left_contact > p {
   font-size: medium;
   font-weight: bold;
   margin: 5px 0;
+  @include for-size(phone-only) {
+  }
+  font-size: small;
 }
 .middle_left_socials {
   margin: 18px 0;
   display: flex;
-  /* justify-content: space-between; */
+
+  @include for-size(phone-only) {
+    justify-content: center;
+  }
 }
 .imwrap {
   height: 20px;
   width: 20px;
   margin-right: 5px;
+
+  @include for-size(phone-only) {
+    height: 12px;
+    width: 12px;
+  }
 }
 .imwrap > img {
   height: 100%;
@@ -46,12 +88,16 @@
 
 .middle_right {
   display: flex;
-  /* width: 100%; */
   justify-content: space-between;
-  /* flex: 1; */
-  /* flex-direction: column; */
   flex-wrap: wrap;
   width: 50%;
+  font-weight: 500;
+  @include for-size(phone-only) {
+    width: 100%;
+  }
+  @include for-size(tablet-portrait-up) {
+    width: 67%;
+  }
 }
 .middle_right_product > span,
 .middle_right_resources > span,
@@ -60,10 +106,17 @@
   display: inline-block;
   font-size: small;
   margin-bottom: 7px;
+
+  @include for-size(phone-only) {
+    font-size: x-small;
+  }
 }
 .middle-heading {
   font-size: medium;
   font-weight: bold;
+  @include for-size(phone-only) {
+    margin-top: 20px;
+  }
 }
 .middle_right_product,
 .middle_right_resources,

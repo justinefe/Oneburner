@@ -16,9 +16,12 @@ const HomepageTwo = () => {
       <NavBar />
       <Banner />
       <Partner />
+
       <Help />
+
       <Tools />
       <Region />
+
       <Testimonial />
       <FreeTrial
         title="Want to learn more on how we can impact your enterprise"

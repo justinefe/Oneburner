@@ -1,0 +1,28 @@
+@import "../../media.scss";
+@import "../../function.scss";
+/*
+@include for-size(desktop-up) {
+}
+
+@include for-size(phone-only) {
+}
+@include for-size(tablet-portrait-up) {
+}
+*/
+.CompanyLogo {
+  height: 50px;
+  margin: 0 50px 70px 0;
+
+  @include for-size(phone-only) {
+    margin: 8px 12px;
+    height: 18px;
+  }
+  @include for-size(tablet-portrait-up) {
+    height: 30px;
+    margin: 12px 25px;
+  }
+}
+.CompanyLogo img {
+  height: 100%;
+  object-fit: contain;
+}

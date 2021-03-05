@@ -19,6 +19,7 @@ const HomePage = () => {
     <div>
       <NavBar />
       <Banner />
+
       <Partner />
       <Activities />
       <InfoImageLeft
@@ -39,19 +40,23 @@ const HomePage = () => {
     Track and manage prospective customers. Manage their notes, emails, meetings, calls, contacts, and files"
         title="Efficient lead management"
       />
+
       <InfoImageRight
         image={dashboard}
         description="
       Track and manage prospective customers. Manage their notes, emails, meetings, calls, contacts, and files"
         title="Efficient lead management"
       />
+
       <Customersupport />
+
       <FreeTrial
         title="Choose a better way to work"
         des1="No credit card details"
         des2="No additional installation"
         des3="No time wasting"
       />
+
       <Footer />
     </div>
   );

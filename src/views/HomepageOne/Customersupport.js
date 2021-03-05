@@ -4,7 +4,7 @@ import phone from "../../assets/phone.png";
 import mail from "../../assets/mail.png";
 import supportImage from "../../assets/supportImage.png";
 import SupportOption from "../../components/SupportOption/SupportOption";
-import "./Customersupport.css";
+import "./Customersupport.scss";
 import DescriptionText from "../../components/DescriptionText/DescriptionText";
 
 const Customersupport = () => {

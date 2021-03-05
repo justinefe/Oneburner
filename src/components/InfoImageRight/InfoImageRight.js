@@ -1,6 +1,6 @@
 import React from "react";
 import DescriptionText from "../DescriptionText/DescriptionText";
-import "./InfoImageRight.css";
+import "./InfoImageRight.scss";
 const InfoImageRight = ({ image, title, description }) => {
   return (
     <div className="InfoImageRight">
@@ -8,9 +8,7 @@ const InfoImageRight = ({ image, title, description }) => {
         <DescriptionText title={title} description={description} />
       </div>
       <div className="InfoImageRight_right">
-        <div className="InfoImageRight_dashboard">
-          <img src={image} alt="" />
-        </div>
+        <img src={image} alt="" />
       </div>
     </div>
   );

@@ -1,0 +1,74 @@
+@import "../../media.scss";
+@import "../../function.scss";
+/*
+@include for-size(desktop-up) {
+}
+
+@include for-size(phone-only) {
+}
+@include for-size(tablet-portrait-up) {
+}
+*/
+.bannartwo {
+  display: flex;
+  margin: 60px;
+  height: 70vh;
+  @include for-size(phone-only) {
+    flex-wrap: wrap;
+    height: auto;
+    position: relative;
+    margin: 20px;
+  }
+}
+.bannartwo_first {
+  align-self: flex-end;
+  @include for-size(phone-only) {
+    position: absolute;
+    transform: translate(120px, 85px);
+  }
+}
+/* .bannartwo_first > img {
+} */
+.bannartwo_middle {
+  color: #462686;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  @include for-size(phone-only) {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+}
+.bannartwo_middle .button {
+  @include for-size(phone-only) {
+    min-width: 80px;
+  }
+}
+.bannartwo_middle .button div {
+  @include for-size(phone-only) {
+    padding-bottom: 3px;
+  }
+}
+.bannartwo_middle {
+  span {
+    display: inline-block;
+    margin: 0 0 60px 0;
+    font-weight: 500;
+    @include for-size(phone-only) {
+      font-size: medium;
+      flex-wrap: wrap;
+      height: auto;
+    }
+  }
+}
+.bannartwo_middle {
+  h1 {
+    width: 80%;
+    text-align: center;
+    @include for-size(phone-only) {
+      width: 100%;
+      font-size: x-large;
+    }
+  }
+}

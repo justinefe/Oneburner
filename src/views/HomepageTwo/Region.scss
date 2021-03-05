@@ -1,0 +1,54 @@
+@import "../../media.scss";
+@import "../../function.scss";
+/*
+@include for-size(desktop-up) {
+}
+
+@include for-size(phone-only) {
+}
+@include for-size(tablet-portrait-up) {
+}
+*/
+.Region {
+  /* align-items: center; */
+  margin: 1px auto;
+  padding: 30px 60px;
+  text-align: center;
+  // background: rgba(204, 204, 204, 0.1);
+
+  @include for-size(phone-only) {
+    padding: 10px 20px;
+  }
+}
+.Region > p {
+  margin: 1px auto;
+  color: #333333;
+  font-weight: 500;
+  width: 60vw;
+  @include for-size(phone-only) {
+    width: 80vw;
+  }
+}
+.Region > h2 {
+  margin: 1px auto;
+  margin-bottom: 12px;
+  color: #333333;
+  font-weight: 500;
+  @include for-size(phone-only) {
+    width: 80vw;
+    margin-bottom: 12px;
+  }
+}
+
+.Region_map {
+  margin-top: 60px;
+  margin-bottom: 5px;
+  height: 350px;
+  @include for-size(phone-only) {
+    height: 250px;
+  }
+}
+.Region_map > img {
+  height: 100%;
+  object-fit: contain;
+}

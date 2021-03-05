@@ -1,5 +1,5 @@
 import React from "react";
-import "./CompanyLogo.css";
+import "./CompanyLogo.scss";
 const CompanyLogo = ({ image }) => {
   return (
     <div className="CompanyLogo">

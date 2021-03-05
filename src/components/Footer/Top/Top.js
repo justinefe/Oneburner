@@ -2,7 +2,7 @@ import React from "react";
 import logo from "../../../assets/LogoEdited.jpg";
 import dropdown from "../../../assets/dropdown.jpg";
 import world from "../../../assets/world 1.jpg";
-import "./Top.css";
+import "./Top.scss";
 
 const Top = () => {
   return (

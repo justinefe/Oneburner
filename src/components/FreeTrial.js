@@ -1,7 +1,7 @@
 import React from "react";
 import Space from "./Space";
 import RoundedBtn from "./RoundedBtn/Button";
-import "./FreeTrial.css";
+import "./FreeTrial.scss";
 
 const FreeTrial = ({ title, color, col, des1 = "", des2 = "", des3 = "" }) => {
   return (

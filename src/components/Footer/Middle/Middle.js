@@ -4,7 +4,7 @@ import link from "../../../assets/linkedin.jpg";
 import facebook from "../../../assets/facebook.jpg";
 import twitter from "../../../assets/twitter.jpg";
 import youtube from "../../../assets/youtube.jpg";
-import "./Middle.css";
+import "./Middle.scss";
 const Middle = () => {
   return (
     <div className="middle">

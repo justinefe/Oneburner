@@ -1,0 +1,74 @@
+.login {
+  /* text-align: center; */
+  color: rgba(69, 69, 69, 0.8);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.login > span {
+  display: inline-block;
+  margin: 8px auto;
+  font-weight: 400px;
+}
+.login_form {
+  margin: 60px auto;
+}
+.login_form > form > span {
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+}
+.login_email,
+.login_password {
+  margin-bottom: 25px;
+  margin-top: 5px;
+  height: 45px;
+  width: 400px;
+  background: #ffffff;
+  border: 1px solid rgba(21, 11, 40, 0.7);
+  border-radius: 5px;
+}
+.login_email > input,
+.login_password > input {
+  outline: none;
+  border: none;
+  background-color: transparent;
+}
+
+.login_form > form > button {
+  height: 45px;
+  width: 400px;
+  background: #462686;
+  border-radius: 50px;
+  border: none;
+  color: white;
+  margin-bottom: 20px;
+}
+
+.login_form > form > span {
+  text-align: center;
+}
+
+.login_social {
+  margin: 30px auto;
+  display: flex;
+  align-items: center;
+  /* justify-content: space-between; */
+}
+.login_social .CompanyLogo {
+  margin: 0;
+  margin-right: 20px;
+  height: 30px;
+}
+.login_social > span {
+  margin-right: 8px;
+}
+
+.login_password {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.login_password > img {
+  padding-right: 12px;
+}

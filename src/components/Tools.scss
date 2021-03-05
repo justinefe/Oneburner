@@ -1,9 +1,26 @@
+@import "../media.scss";
+@import "../function.scss";
+/*
+@include for-size(desktop-up) {
+}
+
+@include for-size(phone-only) {
+}
+@include for-size(tablet-portrait-up) {
+}
+*/
 .tools {
   display: flex;
   align-items: center;
   padding: 30px 80px;
   margin: 50px auto;
   flex-direction: column;
+  @include for-size(phone-only) {
+    padding: 30px 20px;
+  }
+  @include for-size(tablet-portrait-up) {
+    padding: 10px 20px;
+  }
 }
 .tools_images {
   display: flex;
@@ -11,14 +28,20 @@
   flex-wrap: wrap;
 }
 .tools_headings {
-  width: 25%;
+  width: 70vw;
   margin-bottom: 80px;
   text-align: center;
+  @include for-size(phone-only) {
+    margin-bottom: 30px;
+  }
 }
 .tools_headings > span {
   font-size: larger;
   font-weight: 500;
-  color: 333333;
+  color: #333333;
+  @include for-size(phone-only) {
+    font-size: small;
+  }
 }
 .tools_image_wrap {
   height: 50px;

@@ -1,14 +1,32 @@
+@import "../../media.scss";
+@import "../../function.scss";
+/*
+@include for-size(desktop-up) {
+}
+
+@include for-size(phone-only) {
+}
+@include for-size(tablet-portrait-up) {
+}
+*/
 .Testimonial {
   display: flex;
   /* font-size: small; */
   flex-direction: column;
   padding: 60px;
+  @include for-size(phone-only) {
+    padding: 20px;
+  }
 }
 .Testimonial > p {
   width: 60vw;
+  font-weight: 500;
   text-align: center;
   color: #333333;
   margin: 30px auto;
+  @include for-size(phone-only) {
+    width: 80vw;
+  }
 }
 .Testimonial_profile {
   display: flex;
@@ -36,6 +54,9 @@
 .Testimonial_space {
   width: 250px;
   border: 1px solid rgba(51, 51, 51, 0.4);
+  @include for-size(phone-only) {
+    display: none;
+  }
 }
 .Testimonial_imagewrap {
   height: 130px;

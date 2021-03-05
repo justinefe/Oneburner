@@ -1,3 +1,14 @@
+@import "../../media.scss";
+@import "../../function.scss";
+/*
+@include for-size(desktop-up) {
+}
+
+@include for-size(phone-only) {
+}
+@include for-size(tablet-portrait-up) {
+}
+*/
 .activity {
   display: flex;
   flex-direction: column;
@@ -5,7 +16,14 @@
   background: #ffffff;
   margin-bottom: 8px;
   box-shadow: 0px 16px 40px 5px rgba(121, 134, 147, 0.12);
+  @include for-size(phone-only) {
+    padding: 0px;
+  }
+  @include for-size(tablet-portrait-up) {
+    padding: 20px;
+  }
 }
+
 .activity_nav {
   display: flex;
   flex: 1;
@@ -15,19 +33,29 @@
   border: 2px solid #462686;
   border-radius: 10px;
   overflow: hidden;
+  @include for-size(phone-only) {
+    margin: 20px;
+    flex-wrap: wrap;
+    width: 33%;
+    justify-content: center;
+  }
 }
 .activity_nav_buttons {
   height: 40px;
+  font-weight: 500;
   display: flex;
-  min-width: 200px;
+  // min-width: 200px;
   justify-content: center;
+  @include for-size(phone-only) {
+    // padding: 0px;
+    width: 100%;
+  }
   /* align-self: center; */
 }
 .activity_nav_buttons > button {
   border: none;
   outline: none;
   color: #454545;
-  font-weight: 400;
   background-color: transparent;
 }
 .activity_nav > a {

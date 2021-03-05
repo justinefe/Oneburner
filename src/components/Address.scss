@@ -1,0 +1,16 @@
+.address {
+  display: flex;
+  flex-direction: column;
+  font-size: small;
+}
+.address > h2 {
+  font-size: medium;
+  margin-bottom: 4px;
+}
+
+.address > span {
+  display: inline-block;
+  font-size: small;
+  margin: 2px 0;
+  font-weight: 400;
+}

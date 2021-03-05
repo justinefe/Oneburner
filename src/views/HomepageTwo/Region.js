@@ -1,6 +1,6 @@
 import React from "react";
 import map from "../../assets/africa.png";
-import "./Region.css";
+import "./Region.scss";
 
 const Region = () => {
   return (

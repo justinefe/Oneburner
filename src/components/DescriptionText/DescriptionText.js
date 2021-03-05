@@ -1,5 +1,5 @@
 import React from "react";
-import "./DescriptionText.css";
+import "./DescriptionText.scss";
 const DescriptionText = ({ title, description }) => {
   return (
     <div className="description_text">
