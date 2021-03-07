@@ -1,4 +1,5 @@
 import React, { useRef } from "react";
+import { Link } from "react-router-dom";
 import NavDrop from "./NavDrop";
 import dropdown from "../../assets/left-arrow.png";
 import "./NavDrop.scss";
@@ -16,23 +17,30 @@ const MenuDrop = React.forwardRef(({ ...props }, menuRef) => {
           <img src={dropdown} alt="" />
           <h3>Product</h3>
         </div>
+        <Link to="/landing">
+          <div className="menudrop_right_button">
+            <h3>Home Two</h3>
+          </div>
+        </Link>
+        <Link to="/sales">
+          <div className="menudrop_right_button">
+            <h3>Contact Sales</h3>
+          </div>
+        </Link>
+        <Link to="/login">
+          <div className="menudrop_right_button">
+            <h3>Login</h3>
+          </div>
+        </Link>
         <div className="menudrop_right_button">
           <h3>Pricing</h3>
         </div>
-        <div className="menudrop_right_button">
-          <h3>Login</h3>
-        </div>
+
         <div className="menudrop_right_button">
           <h3>Enterprise</h3>
         </div>
         <div className="menudrop_right_button">
           <h3>Support</h3>
-        </div>
-        <div className="menudrop_right_button">
-          <h3>Contact Sales</h3>
-        </div>
-        <div className="menudrop_right_button">
-          <h3>Login</h3>
         </div>
       </div>
     </div>
