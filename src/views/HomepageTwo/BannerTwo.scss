@@ -12,11 +12,15 @@
 .bannartwo {
   display: flex;
   margin: 60px;
-  height: 70vh;
+  // height: 70vh;
   @include for-size(phone-only) {
     flex-wrap: wrap;
     height: auto;
     position: relative;
+    margin: 20px;
+    overflow: hidden;
+  }
+  @include for-size(tablet-portrait-up) {
     margin: 20px;
   }
 }
@@ -24,11 +28,12 @@
   align-self: flex-end;
   @include for-size(phone-only) {
     position: absolute;
-    transform: translate(120px, 85px);
+    transform: translate(120px, 75px);
   }
 }
-/* .bannartwo_first > img {
-} */
+.bannartwo_right {
+  margin-bottom: 39px;
+}
 .bannartwo_middle {
   color: #462686;
   text-align: center;
