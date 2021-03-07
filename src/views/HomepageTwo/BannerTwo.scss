@@ -55,6 +55,7 @@
     display: inline-block;
     margin: 0 0 60px 0;
     font-weight: 500;
+    width:75%;
     @include for-size(phone-only) {
       font-size: medium;
       flex-wrap: wrap;
