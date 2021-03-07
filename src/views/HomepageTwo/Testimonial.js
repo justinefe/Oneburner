@@ -14,13 +14,11 @@ const Testimonial = () => {
         worth much more than we paid. We were treated like royalty
       </p>
       <div className="Testimonial_profile">
-        <div className="Testimonial_space"></div>
         <PersonalInfo
           name="Kemi Hassan"
           desc="CEO, Sahara Inc."
           image={profile}
         />
-        <div className="Testimonial_space"></div>
       </div>
     </div>
   );

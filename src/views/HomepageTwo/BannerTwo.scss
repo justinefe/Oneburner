@@ -12,11 +12,15 @@
 .bannartwo {
   display: flex;
   margin: 60px;
-  height: 70vh;
+  // height: 70vh;
   @include for-size(phone-only) {
     flex-wrap: wrap;
     height: auto;
     position: relative;
+    margin: 20px;
+    overflow: hidden;
+  }
+  @include for-size(tablet-portrait-up) {
     margin: 20px;
   }
 }
@@ -24,51 +28,58 @@
   align-self: flex-end;
   @include for-size(phone-only) {
     position: absolute;
-    transform: translate(120px, 85px);
+    transform: translate(120px, 75px);
   }
 }
-/* .bannartwo_first > img {
-} */
+.bannartwo_right {
+  margin-bottom: 39px;
+}
 .bannartwo_middle {
   color: #462686;
   text-align: center;
   display: flex;
   flex-direction: column;
   align-items: center;
-  @include for-size(phone-only) {
-    width: 100%;
-    margin-bottom: 30px;
+
+  h1 {
+    width: 80%;
+    margin-bottom: 25px;
+    text-align: center;
+    @include for-size(phone-only) {
+      width: 90%;
+      font-size: x-large;
+    }
   }
-}
-.bannartwo_middle .button {
-  @include for-size(phone-only) {
-    min-width: 80px;
-  }
-}
-.bannartwo_middle .button div {
-  @include for-size(phone-only) {
-    padding-bottom: 3px;
-  }
-}
-.bannartwo_middle {
   span {
     display: inline-block;
     margin: 0 0 60px 0;
+    text-align: center;
     font-weight: 500;
     @include for-size(phone-only) {
       font-size: medium;
       flex-wrap: wrap;
+      margin: 0 0 35px 0;
       height: auto;
+      width: 75%;
+    }
+  }
+  @include for-size(phone-only) {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+  .button {
+    @include for-size(phone-only) {
+      min-width: 85px;
     }
   }
 }
+
 .bannartwo_middle {
-  h1 {
-    width: 80%;
-    text-align: center;
-    @include for-size(phone-only) {
-      width: 100%;
-      font-size: x-large;
+  .button {
+    div {
+      @include for-size(phone-only) {
+        padding-bottom: 1px;
+      }
     }
   }
 }

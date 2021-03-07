@@ -16,7 +16,7 @@ import NavBar from "../../components/NavBar";
 
 const HomePage = () => {
   return (
-    <div>
+    <div className="container ">
       <NavBar />
       <Banner />
 

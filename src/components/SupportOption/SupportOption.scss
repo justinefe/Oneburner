@@ -7,14 +7,18 @@
   height: 25px;
   width: 25px;
 }
-.supportOption_img img {
-  height: 100%;
-  object-fit: contain;
+.supportOption_img {
+  img {
+    height: 100%;
+    object-fit: contain;
+  }
 }
-.supportOption > span {
-  color: rgba(1, 0, 29, 0.6);
-  display: inline-block;
-  margin-top: 4px;
-  margin-bottom: 12px;
-  font-size: small;
+.supportOption {
+  span {
+    color: rgba(1, 0, 29, 0.6);
+    display: inline-block;
+    margin-top: 4px;
+    margin-bottom: 12px;
+    font-size: small;
+  }
 }

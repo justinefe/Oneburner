@@ -1,7 +1,9 @@
-.description_text > p {
-  font-size: medium;
-  font-weight: 400;
-  color: rgba(69, 69, 69, 0.8);
+.description_text {
+  p {
+    font-size: medium;
+    font-weight: 400;
+    color: rgba(69, 69, 69, 0.8);
+  }
 }
 .description_text > span {
   font-size: larger;

@@ -35,12 +35,14 @@
     margin-bottom: 30px;
   }
 }
-.tools_headings > span {
-  font-size: larger;
-  font-weight: 500;
-  color: #333333;
-  @include for-size(phone-only) {
-    font-size: small;
+.tools_headings {
+  span {
+    font-size: larger;
+    font-weight: 500;
+    color: #333333;
+    @include for-size(phone-only) {
+      font-size: small;
+    }
   }
 }
 .tools_image_wrap {

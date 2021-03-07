@@ -27,7 +27,6 @@
   display: flex;
   margin: 20px auto;
   flex-direction: column;
-  // background-color: red;
   text-align: left;
   @include for-size(phone-only) {
     padding: 0 20px;
@@ -52,6 +51,7 @@
 
   @include for-size(phone-only) {
     font-size: small;
+    margin-top: 20px;
     width: 70vw;
   }
 }
@@ -60,8 +60,6 @@
   object-fit: contain;
 }
 .banner_right {
-  // background-color: blue;
-  // height: 100%;
   @include for-size(phone-only) {
     height: 25vh;
     width: 100%;

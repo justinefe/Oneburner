@@ -21,11 +21,11 @@
   align-items: center;
   @include for-size(phone-only) {
     height: 25px;
-    width: 70px;
+    width: 80px;
     padding: 0 10px;
   }
   @include for-size(tablet-portrait-up) {
-    width: 120px;
+    width: 130px;
   }
 }
 .button > div,

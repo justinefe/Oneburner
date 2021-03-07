@@ -12,7 +12,7 @@ import Banner from "./BannerTwo";
 
 const HomepageTwo = () => {
   return (
-    <div>
+    <div className="container">
       <NavBar />
       <Banner />
       <Partner />

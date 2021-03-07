@@ -14,19 +14,19 @@
   text-align: center;
   margin: 60px;
   flex-direction: column;
+  span {
+    display: inline-block;
+    color: #333333;
+    font-size: medium;
+    font-weight: 500;
+    margin-bottom: 25px;
+    @include for-size(phone-only) {
+      font-weight: 500;
+      font-size: small;
+    }
+  }
   @include for-size(phone-only) {
     margin: 20px;
-  }
-}
-.partner > span {
-  display: inline-block;
-  color: #333333;
-  font-size: medium;
-  font-weight: 500;
-  margin-bottom: 25px;
-  @include for-size(phone-only) {
-    font-weight: 500;
-    font-size: small;
   }
 }
 .partner_image_wrap {
