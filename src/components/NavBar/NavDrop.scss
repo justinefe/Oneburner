@@ -101,3 +101,15 @@
   display: flex;
   flex-wrap: wrap;
 }
+.menudrop_right_login_button {
+  padding: 0 8px;
+  h3 {
+    margin: 2px 0;
+    font-size: medium;
+    font-weight: 500;
+    color: rgba(51, 51, 51, 0.8);
+  }
+}
+.login_nav_wrap {
+  display: block;
+}

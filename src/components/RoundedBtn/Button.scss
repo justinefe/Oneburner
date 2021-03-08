@@ -21,11 +21,11 @@
   align-items: center;
   @include for-size(phone-only) {
     height: 25px;
-    width: 70px;
+    width: 85px;
     padding: 0 10px;
   }
   @include for-size(tablet-portrait-up) {
-    width: 120px;
+    width: 135px;
   }
 }
 .button > div,
@@ -34,16 +34,20 @@
   font-size: small;
   font-weight: 500;
   background-color: transparent;
+  padding-bottom: 1px;
   border: none;
 
   @include for-size(phone-only) {
     font-size: xx-small;
-    // width: 1000px;
   }
 }
-@include for-size(phone-only) {
-  .button > img {
-    height: 8px;
+.button > img {
+  @include for-size(phone-only) {
+    height: 6px;
+    object-fit: contain;
+  }
+  @include for-size(tablet-portrait-up) {
+    height: 9px;
     object-fit: contain;
   }
 }

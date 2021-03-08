@@ -4,7 +4,7 @@ import "./Button.scss";
 const Button = ({ title }) => {
   return (
     <div className="btnxm">
-      <div>{title ? title : "Trial for free"}</div>
+      <div>{title ? title : "Try for free"}</div>
       <img src={dropRight} alt="" />
     </div>
   );

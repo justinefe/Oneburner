@@ -1,0 +1,37 @@
+.chatimag {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  align-items: center;
+  margin-right: 25%;
+  background-color: white;
+  padding: 10px;
+  z-index: 10;
+
+  .imgWrap {
+    border: 2px solid #cd281b;
+    background-color: blue;
+    border-radius: 50%;
+    height: 130px;
+    overflow: hidden;
+    width: 130px;
+    // z-index: 88;
+    img {
+      height: 100%;
+      object-fit: contain;
+    }
+  }
+  .msgContent {
+    position: absolute;
+    top: 107px;
+    background: #cd281b;
+    width: 170px;
+    box-shadow: 0px 20px 40px rgba(205, 40, 27, 0.15);
+    border-radius: 10px;
+    color: white;
+    p {
+      padding: 10px 20px;
+      margin: 0;
+    }
+  }
+}

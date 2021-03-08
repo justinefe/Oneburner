@@ -1,6 +1,5 @@
 import React from "react";
 import Address from "../../components/Address";
-import Button from "../../components/RoundedBtn/Button";
 import "./ContactSales.scss";
 
 const ContactSales = () => {
@@ -9,35 +8,35 @@ const ContactSales = () => {
       <div className="ContactSales_left">
         <form>
           <div className="ContactSales_left_double">
-            <div className="lastname">
-              <label htmlFor="">Last Name</label>
-              <div className="username">
+            <div className="company_name">
+              <label htmlFor="">Company Size</label>
+              <div className="name company_size">
                 <input type="text" />
               </div>
-            </div>
-            <div className="lastname">
-              <label htmlFor="">First Name</label>
-              <div className="username">
+            </div>{" "}
+            <div className="company_name">
+              <label htmlFor="">Company Size</label>
+              <div className="name company_size">
                 <input type="text" />
               </div>
             </div>
           </div>
           <div className="ContactSales_left_single">
             <label htmlFor="">Work Email</label>
-            <div className="login_email">
+            <div className=" name sales_email">
               <input type="text" />
             </div>
           </div>
           <div className="ContactSales_left_double">
-            <div className="lastname">
-              <label htmlFor="">Company Name</label>
-              <div className="username">
+            <div className="company_name">
+              <label htmlFor="">Company Size</label>
+              <div className="name company_size">
                 <input type="text" />
               </div>
             </div>
-            <div className="lastname">
+            <div className="company_name">
               <label htmlFor="">Company Size</label>
-              <div className="username">
+              <div className="name company_size">
                 <input type="text" />
               </div>
             </div>
@@ -45,11 +44,12 @@ const ContactSales = () => {
           <div className="ContactSales_left_single">
             <label htmlFor="">How can our expert help you?</label>
             <div className="username_long">
-              <input type="text" />
+              <textarea name="" id="" cols="30" rows="10"></textarea>
             </div>
           </div>
-          <div className="buttonWrap"></div>
-          <button>Contact Us</button>
+          <div className="buttonWrap">
+            <button>Contact Us</button>
+          </div>
         </form>
       </div>
       <div className="ContactSales_right">

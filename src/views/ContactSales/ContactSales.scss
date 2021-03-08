@@ -1,73 +1,202 @@
+@import "../../media.scss";
+@import "../../function.scss";
+/*
+@include for-size(desktop-up) {
+}
+
+@include for-size(phone-only) {
+}
+@include for-size(tablet-portrait-up) {
+}
+*/
 .ContactSales {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  padding: 60px 30px;
+  padding: 60px 20px;
   background: #e5e5e5;
   font-size: small;
+  @include for-size(desktop-up) {
+    flex: wrap;
+  }
 }
 .ContactSales_right {
-  width: 50%;
-  padding: 60px;
+  padding: 20px 0;
+  width: 100%;
+  text-align: center;
+  @include for-size(desktop-up) {
+    padding: 40px;
+    text-align: left;
+    width: 50%;
+  }
 }
 .ContactSales_right > h2 {
   color: #333333;
+  margin: 0 0 20px auto;
+  font-weight: 500;
 }
 .ContactSales_right > p {
   color: rgba(69, 69, 69, 0.8);
-}
-.ContactSales_left {
-  display: flex;
-  justify-content: center;
-  background: #ffffff;
-  padding: 60px;
-  box-shadow: 0px 0px 30px 10px rgba(0, 0, 0, 0.08);
+  font-weight: 500;
+
+  margin: 12px auto;
 }
 .ContactSales_right_address {
   align-self: flex-end;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  text-align: left;
+
+  .address {
+    h2 {
+      font-weight: 500;
+      font-size: medium;
+    }
+    span {
+      font-weight: 500;
+    }
+  }
 }
 
-.ContactSales_left_double {
+.ContactSales_left {
   display: flex;
-  width: 100%;
-  align-content: center;
-  justify-content: space-between;
-}
-.ContactSales_left_single {
-  width: 100%;
-}
-.username {
-  margin-bottom: 25px;
-  margin-top: 5px;
-  height: 45px;
-  width: 190px;
+  justify-content: center;
   background: #ffffff;
+  padding: 30px 0;
+  margin: 0 auto;
+  width: 100%;
+  box-shadow: 0px 0px 30px 10px rgba(0, 0, 0, 0.08);
+  @include for-size(tablet-portrait-up) {
+    padding: 30px 20px;
+  }
+  @include for-size(desktop-up) {
+    width: 50%;
+  }
+  form {
+    width: 100%;
+
+    label {
+      font-size: small;
+      color: #333333;
+      padding-left: 8%;
+      font-weight: 500;
+      @include for-size(tablet-portrait-up) {
+        padding-left: 0;
+      }
+      @include for-size(desktop-up) {
+      }
+    }
+
+    button {
+      height: 45px;
+      width: 100%;
+      color: white;
+      font-size: small;
+      font-weight: 500;
+      border: none;
+      border-radius: 20px;
+      background: rgb(70, 38, 134);
+      margin-bottom: 14px;
+    }
+  }
+}
+
+.name,
+.username_long {
+  margin: 5px auto 25px auto;
+  height: 35px;
+  width: 85%;
+  display: flex;
   border: 1px solid rgba(21, 11, 40, 0.7);
   border-radius: 5px;
-}
-.username > input,
-.username_long > input {
-  outline: none;
-  border: none;
-  background-color: transparent;
-}
-
-.ContactSales_left > form > button {
-  width: 100%;
-  background: #462686;
-  border-radius: 50px;
-  color: white;
-  height: 45px;
-  outline: none;
-  border: none;
+  input,
+  textarea {
+    outline: none;
+    border: 0;
+    background-color: transparent;
+    flex: 1;
+  }
 }
 .username_long {
   height: 90px;
-  background: #ffffff;
-  border: 1px solid rgba(21, 11, 40, 0.7);
-  border-radius: 5px;
-  margin-bottom: 25px;
+}
+.ContactSales_left_double {
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+  @include for-size(tablet-portrait-up) {
+    justify-content: space-between;
+    margin: 5px auto 25px auto;
+  }
+  @include for-size(desktop-up) {
+    flex-wrap: nowrap;
+  }
+  .company_name {
+    width: 100%;
+    @include for-size(tablet-portrait-up) {
+      width: 50%;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      @include for-size(desktop-up) {
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+      }
+      .name {
+        @include for-size(tablet-portrait-up) {
+          width: 90%;
+          margin: 5px 0;
+        }
+      }
+    }
+  }
+  @include for-size(tablet-portrait-up) {
+    :nth-child(2) {
+      display: flex;
+      label {
+        padding-left: 10%;
+      }
+      .company_size {
+        align-self: flex-end;
+      }
+    }
+  }
+}
+.ContactSales_left_single {
+  width: 100%;
+  label {
+    @include for-size(desktop-up) {
+      padding-left: 4% !important;
+    }
+  }
+  .username_long {
+    @include for-size(tablet-portrait-up) {
+      width: 100%;
+      height: 150px;
+    }
+    @include for-size(desktop-up) {
+      width: 92%;
+    }
+  }
+  .sales_email {
+    @include for-size(tablet-portrait-up) {
+      width: 100%;
+    }
+    @include for-size(desktop-up) {
+      width: 92%;
+    }
+    input {
+      @include for-size(tablet-portrait-up) {
+        width: 100%;
+      }
+    }
+  }
+}
+
+.buttonWrap {
+  margin: 0 auto;
+  text-align: center;
 }

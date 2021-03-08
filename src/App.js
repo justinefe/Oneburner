@@ -5,9 +5,10 @@ import HomepageTwo from "./views/HomepageTwo";
 import HomepageOne from "./views/HomepageOne";
 import ContactSale from "./views/ContactSales";
 import Login from "./views/Login";
+import "./App.scss";
 function App() {
   return (
-    <div className="App">
+    <div className=" container App">
       <Router>
         <Switch>
           <Route exact path="/landing" component={HomepageTwo} />

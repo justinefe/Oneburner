@@ -49,7 +49,6 @@
   margin-bottom: 40px;
   font-weight: 500;
   color: rgba(51, 51, 51, 0.8);
-
   @include for-size(phone-only) {
     font-size: small;
     width: 70vw;

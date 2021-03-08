@@ -11,7 +11,7 @@ const MainNav = () => {
   const menuRef = useRef();
   useEffect(() => {
     const scroll = () => {
-      if (window.scrollY > 70 && navRef.current) {
+      if (window.scrollY > 70 && navRef.current !== null) {
         navRef.current.style.boxShadow = "0 2px 5px 0 rgba(0, 0, 0, 0.05)";
       } else {
         navRef.current.style.boxShadow = "none";

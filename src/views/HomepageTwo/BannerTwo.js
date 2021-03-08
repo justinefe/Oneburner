@@ -1,6 +1,7 @@
 import React from "react";
 import financialReport from "../../assets/financial-report.png";
 import resReport from "../../assets/resreport.png";
+import ChatImag from "../../components/ChatImag";
 import Button from "../../components/RoundedBtn/Button";
 import "./BannerTwo.scss";
 const BannerTwo = () => {
@@ -18,7 +19,7 @@ const BannerTwo = () => {
         <Button title="Request a demo" />
       </div>
       <div className="bannartwo_right">
-        <img src={resReport} alt="" />
+        <ChatImag />
       </div>
     </div>
   );

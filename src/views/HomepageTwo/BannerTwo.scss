@@ -11,8 +11,10 @@
 */
 .bannartwo {
   display: flex;
+  position: relative;
+  height: 80vh;
+  // width: 100%;
   margin: 60px;
-  // height: 70vh;
   @include for-size(phone-only) {
     flex-wrap: wrap;
     height: auto;
@@ -22,24 +24,62 @@
   }
   @include for-size(tablet-portrait-up) {
     margin: 20px;
+    height: 52vh;
+  }
+  &:after {
+    position: absolute;
+    // background-color: red;
+    content: "";
+    // z-index: -8888;
+    left: 8%;
+    top: -2%;
+    height: 80vh;
+    width: 80%;
+    border-bottom: none;
+    border-radius: 60% 60% 0 0;
+    transform: rotate(-15deg);
+    border-top: 2px dashed rgba(70, 38, 134, 0.2);
+
+    @include for-size(tablet-portrait-up) {
+      transform: rotate(0deg);
+      border-radius: 50% 30% 0 0;
+    }
+    @include for-size(phone-only) {
+      display: none;
+    }
   }
 }
 .bannartwo_first {
   align-self: flex-end;
+  width: 30%;
   @include for-size(phone-only) {
     position: absolute;
-    transform: translate(120px, 75px);
+    transform: translate(120px, 10px);
   }
 }
 .bannartwo_right {
+  width: 30%;
   margin-bottom: 39px;
+  display: flex;
+  justify-content: flex-end;
+  flex: 1;
+  img {
+    height: 250px;
+    object-fit: contain;
+  }
+  @include for-size(phone-only) {
+    margin: 0 120px 39px 0;
+    // text-align: left;
+  }
 }
 .bannartwo_middle {
+  width: 40%;
   color: #462686;
   text-align: center;
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-top: 50px;
   @include for-size(phone-only) {
     width: 100%;
     margin-bottom: 30px;
@@ -47,7 +87,7 @@
 }
 .bannartwo_middle .button {
   @include for-size(phone-only) {
-    min-width: 80px;
+    min-width: 96px;
   }
 }
 .bannartwo_middle .button div {
@@ -58,9 +98,10 @@
 .bannartwo_middle {
   span {
     display: inline-block;
+    // text-align: center;
     margin: 0 0 60px 0;
     font-weight: 500;
-    width:75%;
+    width: 75%;
     @include for-size(phone-only) {
       font-size: medium;
       flex-wrap: wrap;
@@ -70,7 +111,7 @@
 }
 .bannartwo_middle {
   h1 {
-    width: 80%;
+    // width: 100%;
     text-align: center;
     @include for-size(phone-only) {
       width: 100%;
