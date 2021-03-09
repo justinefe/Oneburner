@@ -13,7 +13,7 @@
   display: flex;
   align-items: center;
   padding: 0 60px;
-  margin: 100px auto;
+  margin: 40px auto 100px auto;
   @include for-size(phone-only) {
     flex-wrap: wrap;
     margin: 0px;
